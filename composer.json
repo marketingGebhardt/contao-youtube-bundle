@@ -1,5 +1,5 @@
 {
-  "name": "dreibein/contao-youtube-bundle",
+  "name": "marketinggebhardt/contao-youtube-bundle",
   "type": "contao-bundle",
   "description": "Contao-Youtube-Bundle to extend the existing YouTube-Element in Contao. The frontend user must now agree to the data transfer to YouTube.",
   "license": "LGPL-3.0+",
