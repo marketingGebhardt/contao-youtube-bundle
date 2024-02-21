@@ -1,0 +1,15 @@
+services:
+  Dreibein\YoutubeBundle\EventListener\YoutubeElementListener:
+    class: Dreibein\YoutubeBundle\EventListener\YoutubeElementListener
+    arguments:
+      - '@Dreibein\YoutubeBundle\Youtube\PreviewImage'
+
+  Dreibein\YoutubeBundle\EventListener\GetSystemMessagesListener:
+    class: Dreibein\YoutubeBundle\EventListener\GetSystemMessagesListener
+    arguments:
+      - '@Dreibein\YoutubeBundle\Message\Message'
+
+  Dreibein\YoutubeBundle\EventListener\ParseBackendTemplateListener:
+    class: Dreibein\YoutubeBundle\EventListener\ParseBackendTemplateListener
+    arguments:
+      - '@Dreibein\YoutubeBundle\Message\Message'

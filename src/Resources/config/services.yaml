@@ -1,0 +1,13 @@
+services:
+  Dreibein\YoutubeBundle\Youtube\PreviewImage:
+    class: Dreibein\YoutubeBundle\Youtube\PreviewImage
+    arguments:
+      - '@kernel'
+      - '@monolog.logger.contao'
+    public: true
+
+  Dreibein\YoutubeBundle\Message\Message:
+    class: Dreibein\YoutubeBundle\Message\Message
+    arguments:
+      - '@Symfony\Contracts\Translation\TranslatorInterface'
+    public: true
